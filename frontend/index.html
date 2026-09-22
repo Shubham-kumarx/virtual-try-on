@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Virtual Try-On</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <h1>Virtual Try-On</h1>
+        <p class="subtitle">
+            Move in front of the camera
+        </p>
+
+        <div class="camera-container">
+
+            <video id="video" autoplay playsinline></video>
+
+            <canvas id="canvas"></canvas>
+
+        </div>
+
+        <button id="startButton">
+            Start Camera
+        </button>
+
+        <p id="status">Camera not started</p>
+
+    </div>
+
+    <!-- MediaPipe -->
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>

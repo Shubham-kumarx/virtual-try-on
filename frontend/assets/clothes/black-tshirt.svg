@@ -1,0 +1,105 @@
+<svg width="500" height="600" viewBox="0 0 500 600"
+     xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+        <linearGradient id="shirtGradient"
+                        x1="0" y1="0"
+                        x2="1" y2="1">
+            <stop offset="0%" stop-color="#171717"/>
+            <stop offset="50%" stop-color="#080808"/>
+            <stop offset="100%" stop-color="#1d1d1d"/>
+        </linearGradient>
+
+        <linearGradient id="sleeveGradient"
+                        x1="0" y1="0"
+                        x2="1" y2="0">
+            <stop offset="0%" stop-color="#0b0b0b"/>
+            <stop offset="100%" stop-color="#202020"/>
+        </linearGradient>
+    </defs>
+
+    <!-- LEFT SLEEVE -->
+    <path
+        d="M125 120
+           L35 180
+           L75 275
+           L150 230
+           Z"
+        fill="url(#sleeveGradient)"
+    />
+
+    <!-- RIGHT SLEEVE -->
+    <path
+        d="M375 120
+           L465 180
+           L425 275
+           L350 230
+           Z"
+        fill="url(#sleeveGradient)"
+    />
+
+    <!-- MAIN BODY -->
+    <path
+        d="M125 105
+           C175 125 325 125 375 105
+
+           L350 570
+           C285 590 215 590 150 570
+
+           Z"
+        fill="url(#shirtGradient)"
+    />
+
+    <!-- COLLAR -->
+    <path
+        d="M190 105
+           C200 155 300 155 310 105
+           C290 90 210 90 190 105
+           Z"
+        fill="#030303"
+    />
+
+    <!-- COLLAR HIGHLIGHT -->
+    <path
+        d="M192 106
+           C205 145 295 145 308 106"
+        fill="none"
+        stroke="#333"
+        stroke-width="7"
+    />
+
+    <!-- LEFT SEAM -->
+    <path
+        d="M150 180 L140 555"
+        fill="none"
+        stroke="#292929"
+        stroke-width="3"
+    />
+
+    <!-- RIGHT SEAM -->
+    <path
+        d="M350 180 L360 555"
+        fill="none"
+        stroke="#292929"
+        stroke-width="3"
+    />
+
+    <!-- SMALL LOGO -->
+    <path
+        d="M230 270 L250 245 L270 270"
+        fill="none"
+        stroke="#eeeeee"
+        stroke-width="4"
+    />
+
+    <text
+        x="250"
+        y="300"
+        text-anchor="middle"
+        font-family="Arial"
+        font-size="18"
+        fill="#eeeeee">
+        VTO
+    </text>
+
+</svg>
